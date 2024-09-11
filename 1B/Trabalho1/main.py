@@ -1,7 +1,23 @@
+import csv
 from cadastrar import cadastrar
 from consultar import consultar
 from excluir import excluir
 from listar import listar
+from pathlib import Path
+
+#Nome do arquivo .CSV
+file_name = Path('dados.csv') 
+
+#Verifica se o arquivo .csv existe, caso contrário, ele criará um novo
+if file_name.is_file():
+  pass
+else:
+  with open(file_name, mode='w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames = ['nome', 'idade', 'cpf', 'senha'])
+    writer.writeheader()
+
+#Nome do sistema
+print("SISTEMA DE CADASTRO DE CLIENTES AMAZON")
 
 #Menu Main
 while True:

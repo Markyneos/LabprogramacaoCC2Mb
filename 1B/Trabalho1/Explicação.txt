@@ -1,0 +1,5 @@
+Esse sistema de cadastro da Amazon cadastra seus clientes e seus dados como: Nome, Idade, CPF e sua senha para acesso.
+(Eu sinto muito, professor, eu não tive mais criatividade que isso, espero que isso não seja um fator importante pra nota).
+
+Aluno: Marco Antonio Faustini Pessoa
+Turma: CC2Mb
