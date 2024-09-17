@@ -20,4 +20,6 @@ def consultar():
       print("Não foi encontrado nenhum resultado!")
     else:
       for resultado in resultados:
+        resultado['idade'] = int(resultado['idade'])
+        resultado['cpf'] = int(resultado['cpf'])
         print(f"Nome: {resultado['nome']} || Idade: {resultado['idade']} || CPF: {resultado['cpf']} || Senha: {resultado['senha']}")
