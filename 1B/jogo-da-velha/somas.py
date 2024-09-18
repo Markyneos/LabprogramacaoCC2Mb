@@ -1,6 +1,6 @@
 #Função que somará as vezes que 'x' ou 'o' apareceram nas linhas do tabuleiro,
 # a fim de definir a vitória de algum jogador
-def soma_linhas(matriz, jogador):
+def soma_linhas(matriz: list, jogador: str) -> list:
     soma = []
     for i in range(len(matriz)):
         contador = 0
@@ -12,7 +12,7 @@ def soma_linhas(matriz, jogador):
 
 #Função que somará as vezes que 'x' ou 'o' apareceram nas colunas do tabuleiro,
 # a fim de definir a vitória de algum jogador
-def soma_colunas(matriz, jogador):
+def soma_colunas(matriz: list, jogador: str) -> list:
     soma = []
     for i in range(len(matriz[0])):  
         contador = 0
@@ -24,7 +24,7 @@ def soma_colunas(matriz, jogador):
 
 #Função para somar a quantidade de vezes que 'x' ou 'o' aparecem na
 # a primeira diagonal do tabuleiro, a fim de verificar a vitória dos jogadores
-def soma_diagonal(tabuleiro, jogador):
+def soma_diagonal(tabuleiro: list, jogador: str) -> int:
   soma = 0
   for i in range(len(tabuleiro)):
     for j in range(len(tabuleiro[i])):
@@ -34,7 +34,7 @@ def soma_diagonal(tabuleiro, jogador):
 
 #Função para somar a quantidade de vezes que 'x' ou 'o' aparecem na
 # a primeira diagonal do tabuleiro, a fim de verificar a vitória dos jogadores
-def soma_diagonal2(tabuleiro, jogador):
+def soma_diagonal2(tabuleiro: list, jogador: str) -> int:
     soma = 0
     for i in range(len(tabuleiro)):
         if tabuleiro[i][len(tabuleiro) - 1 - i] == jogador:

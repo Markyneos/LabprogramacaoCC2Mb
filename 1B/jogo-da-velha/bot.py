@@ -2,7 +2,7 @@ import random
 from somas import soma_colunas, soma_diagonal, soma_diagonal2, soma_linhas
 
 #Inicia a definição da função do bot
-def bot(tabuleiro):
+def bot(tabuleiro: list) -> list:
   #Verifica se "a soma" de 'x' na primeira diagonal é igual a 2, para impedir a vitória do jogador
   if soma_diagonal(tabuleiro, 'x') == 2:
     for i in range(len(tabuleiro)):

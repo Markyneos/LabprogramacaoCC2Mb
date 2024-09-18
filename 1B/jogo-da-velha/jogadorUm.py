@@ -1,6 +1,6 @@
 #Função que inicia a jogada do primeiro jogador (x), e, caso a posição escolhida esteja vazia,
 # a mesma será colocada o símbolo do jogador
-def jogadorUm(tabuleiro):
+def jogadorUm(tabuleiro: list) -> list:
   print("Jogador Um:")
   while True:
     coluna = int(input("Digite qual coluna quer jogar(0, 1 ou 2): "))

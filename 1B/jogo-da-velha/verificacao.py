@@ -4,7 +4,7 @@ from somas import soma_linhas
 from somas import soma_diagonal
 from somas import soma_diagonal2
 
-def verificacao(tabuleiro):
+def verificacao(tabuleiro: list) -> bool:
 #Atribui a variáveis o número de 'pontos' dos jogadores em cada coluna
   coluna1 = soma_colunas(tabuleiro, "x")
   coluna2 = soma_colunas(tabuleiro, "o")

@@ -6,7 +6,7 @@ def cadastrar():
   dados = [
     {'nome': input("Digite seu nome: "),
      'idade': int(input("Digite sua idade: ")), 
-     'cpf': int(input("Digite seu cpf(somente números): ")),
+     'cpf': input("Digite seu cpf(somente números): "),
     'senha': input("Digite sua senha: ")}
   ]
   

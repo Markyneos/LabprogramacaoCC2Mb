@@ -17,5 +17,4 @@ def listar():
     print("Aqui estão os dados no arquivo: ")
     for dado in dados:
       dado['idade'] = int(dado['idade'])
-      dado['cpf'] = int(dado['cpf'])
       print(f"Nome: {dado['nome']} || Idade: {dado['idade']} || CPF: {dado['cpf']} || Senha: {dado['senha']}")
