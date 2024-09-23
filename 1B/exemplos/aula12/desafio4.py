@@ -44,7 +44,6 @@ def tamMax(string: str) -> int:
     caracteres_usados = []
     i = 0
     tamanho = 0
-    # caracteres = set(caracteres)
     while i != len(caracteres):
       caracteres_usados = []
       for j in range(i, len(caracteres)):
