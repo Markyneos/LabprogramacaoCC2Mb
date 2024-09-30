@@ -1,5 +1,0 @@
-#Criar arquivo .csv
-file_name = 'dados.csv'
-with open(file_name, mode='w', newline='') as file:
-  writer = csv.DictWriter(file, fieldnames=['nome', 'idade', 'cpf', 'senha'])
-  writer.writeheader()
