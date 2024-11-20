@@ -5,10 +5,10 @@ valorTotal = arquivoArray[1:,5].astype(float)
 precoUnitario = arquivoArray[1:,4].astype(float)
 quantidadeVendida = arquivoArray[1:,3].astype(int)
 
-result_avg_valorTotal = np.average(valorTotal)
+resultAvgValorTotal = np.average(valorTotal)
 resultMedianValorTotal = np.median(valorTotal)
 resultStdValorTotal = np.std(valorTotal)
-print(f'Total de vendas | Média: {result_avg_valorTotal} | Mediana: {resultMedianValorTotal} | Desvio Padrão: {resultStdValorTotal}')
+print(f'Total de vendas | Média: {resultAvgValorTotal} | Mediana: {resultMedianValorTotal} | Desvio Padrão: {resultStdValorTotal}')
 
 produtoA = arquivoArray[1:,2] == "Produto A"
 produtoB = arquivoArray[1:,2] == "Produto B"
@@ -68,7 +68,7 @@ for day in datasUnicas:
         maior = somaDoDia
         maiorVendaDia = day
 
-print(f'O dia com mais vendas foi: {maiorVendaDia}')
+print(f'O dia com mais vendas foi: {maiorVendaDia}') #type: ignore
 
 anterior = 0
 diferencas = []
